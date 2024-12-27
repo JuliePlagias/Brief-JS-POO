@@ -1,4 +1,4 @@
-class Voiture{
+class Car{
     #make;
     #model;
     #year;
@@ -51,7 +51,7 @@ class Voiture{
     }
 }
 
-const car = new Voiture("Corvette", "Z06", 2019, "red");
+const car = new Car("Corvette", "Z06", 2019, "red");
 car.showDetails();
 
 car.Color = "black";

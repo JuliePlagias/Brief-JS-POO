@@ -1,20 +1,14 @@
-class Vehicule{
+class Car{
     make;
     model;
     year;
-
-    constructor(make, model, year){
-        this.make = make;
-        this.model = model;
-        this.year =year;
-    }
-}
-
-class Voiture extends Vehicule{
     color;
 
-    constructor(make, model, year,color){
-        super(make, model, year);
+    constructor(make, model, year, color)
+    {
+        this.make = make;
+        this.model = model;
+        this.year = year;
         this.color = color;
     }
 
@@ -25,5 +19,7 @@ class Voiture extends Vehicule{
     }
 }
 
-const car = new Voiture("Corvette", "Z06", 2019, "blue");
+const car = new Car("Corvette", "Z06", 2019, "red");
+const car2 = new Car("Ford", "Raptor", 2000, "red");
 car.showDetails();
+car2.showDetails();

@@ -4,8 +4,7 @@ class Animal{
             throw new Error("Animal is an abstract class");
     }
 
-    makeNoise()
-    {
+    makeNoise(){
         throw new Error("This method is from an abstract class, it needs to be redefined");
     }
 }
@@ -15,8 +14,7 @@ class Dog extends Animal{
         super();
     }
 
-    makeNoise()
-    {
+    makeNoise(){
         console.log("The dog barks");
     }
 }
@@ -26,8 +24,7 @@ class Cat extends Animal{
         super();
     }
 
-    makeNoise()
-    {
+    makeNoise(){
         console.log("The cat meows")
     }
 }
